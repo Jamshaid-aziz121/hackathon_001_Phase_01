@@ -1,7 +1,3 @@
----
-slug: /
----
-
 # Introduction to Educational Robotics
 
 Welcome to the Educational Robotics Book! This comprehensive guide will take you through the fundamentals of robotics and AI applications in educational environments.

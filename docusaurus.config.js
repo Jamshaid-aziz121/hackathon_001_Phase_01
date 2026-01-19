@@ -1,5 +1,5 @@
 // @ts-check
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -26,7 +26,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['urdu'],
+    locales: ['en'],
   },
 
   presets: [
@@ -62,10 +62,53 @@ const config = {
         },
         items: [
           {
+            to: '/',
+            label: 'Home',
+            position: 'left',
+          },
+          {
+            type: 'dropdown',
+            label: 'Modules',
+            position: 'left',
+            items: [
+              {
+                label: 'Module 1: ROS 2',
+                to: '/docs/module-1-ros2/core-concepts',
+              },
+              {
+                label: 'Module 2: Simulation',
+                to: '/docs/module-2-simulation/core-concepts',
+              },
+              {
+                label: 'Module 3: AI Perception',
+                to: '/docs/module-3-ai-perception/core-concepts',
+              },
+              {
+                label: 'Module 4: VLA Systems',
+                to: '/docs/module-4-vla/core-concepts',
+              },
+            ],
+          },
+          {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
+            label: 'All Docs',
             position: 'left',
-            label: 'Read',
+          },
+          {
+            type: 'dropdown',
+            label: 'Resources',
+            position: 'left',
+            items: [
+              {
+                label: 'Tutorials',
+                to: '/docs/tutorials/end-to-end-projects',
+              },
+              {
+                label: 'References',
+                to: '/docs/references/citations',
+              },
+            ],
           },
           {
             href: 'https://github.com/Jamshaid-aziz121/hackathon_001',
@@ -78,11 +121,40 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Modules',
             items: [
               {
-                label: 'Introduction',
-                to: '/docs/intro/getting-started',
+                label: 'Module 1: ROS 2',
+                to: '/docs/module-1-ros2/core-concepts',
+              },
+              {
+                label: 'Module 2: Simulation',
+                to: '/docs/module-2-simulation/core-concepts',
+              },
+              {
+                label: 'Module 3: AI Perception',
+                to: '/docs/module-3-ai-perception/core-concepts',
+              },
+              {
+                label: 'Module 4: VLA Systems',
+                to: '/docs/module-4-vla/core-concepts',
+              },
+            ],
+          },
+          {
+            title: 'Resources',
+            items: [
+              {
+                label: 'Getting Started',
+                to: '/',
+              },
+              {
+                label: 'Tutorials',
+                to: '/docs/tutorials/end-to-end-projects',
+              },
+              {
+                label: 'References',
+                to: '/docs/references/citations',
               },
             ],
           },
@@ -90,21 +162,16 @@ const config = {
             title: 'Community',
             items: [
               {
+                label: 'GitHub',
+                href: 'https://github.com/Jamshaid-aziz121/hackathon_001',
+              },
+              {
                 label: 'Stack Overflow',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               {
                 label: 'Discord',
                 href: 'https://discordapp.com/invite/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/Jamshaid-aziz121/hackathon_001',
               },
             ],
           },
