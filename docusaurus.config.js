@@ -171,7 +171,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Educational Robotics Book. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Developed by Muhammad Jamsahid Aziz.`,
       },
       prism: {
         theme: prismThemes.github,
