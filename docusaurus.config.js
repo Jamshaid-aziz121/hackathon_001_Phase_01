@@ -11,19 +11,16 @@ const config = {
   url: 'https://jamshaid-aziz121.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub Pages deployment, it's typically '/<project-name>/'
-  baseUrl: '/hackathon_001/',
+  baseUrl: '/hackathon_001_Phase_01/',
 
   // GitHub pages deployment config.
   organizationName: 'Jamshaid-aziz121', // Usually your GitHub org/user name.
-  projectName: '/hackathon_001/', // Usually your repo name.
+  projectName: 'hackathon_001_Phase_01', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   trailingSlash: undefined,
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -36,10 +33,9 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          // Edit this to your repo and branch.
           editUrl:
-            'https://github.com/Jamshaid-aziz121/hackathon_001/tree/master/',
+            'https://github.com/Jamshaid-aziz121/hackathon_001_Phase_01/tree/main/',
         },
         blog: false, // Disable blog functionality
         theme: {
@@ -52,7 +48,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/logo.png',
       navbar: {
         title: 'Educational Robotics Book',
@@ -111,7 +106,7 @@ const config = {
             ],
           },
           {
-            href: 'https://github.com/Jamshaid-aziz121/hackathon_001',
+            href: 'https://github.com/Jamshaid-aziz121/hackathon_001_Phase_01',
             label: 'GitHub',
             position: 'right',
           },
@@ -163,7 +158,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/Jamshaid-aziz121/hackathon_001',
+                href: 'https://github.com/Jamshaid-aziz121/hackathon_001_Phase_01',
               },
               {
                 label: 'Stack Overflow',
@@ -182,10 +177,7 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-    }),
-};
+    }),;
 
 
 export default config;
-
-
