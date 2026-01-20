@@ -15,7 +15,7 @@ const config = {
 
   // GitHub pages deployment config.
   organizationName: 'Jamshaid-aziz121', // Usually your GitHub org/user name.
-  projectName: 'hackathon_001/home/', // Usually your repo name.
+  projectName: '/hackathon_001/home/', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -187,3 +187,4 @@ const config = {
 
 
 export default config;
+
