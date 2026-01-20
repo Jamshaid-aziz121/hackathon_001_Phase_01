@@ -19,7 +19,7 @@ const config = {
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-  trailingSlash: undefined,
+  trailingSlash: true,
 
   i18n: {
     defaultLocale: 'en',
@@ -177,7 +177,8 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-    }),;
+    }),
+};
 
 
 export default config;
